@@ -3,7 +3,7 @@
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.yiibai.mybatis.models.User" alias="User" /></typeAliases>
+		<typeAlias type="com.models.User" alias="User" /></typeAliases>
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC"></transactionManager>
@@ -15,6 +15,6 @@
 	</environments>
 	<mappers>
 		<!--power by zhou quan-->
-		<mapper resource="com/yiibai/mybatis/models/User"></mapper>
+		<mapper resource="com/models/User.xml"></mapper>
 	</mappers>
-</configuration>
+</configuration> 
