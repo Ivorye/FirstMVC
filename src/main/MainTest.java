@@ -11,7 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import com.dao.IUser;
 import com.models.User;
 
-public class MainTest {
+public class MainTest extends Farther {
 	private static SqlSessionFactory sqlSessionFactory;
 	private static Reader reader;
 	private static IUser iUser;
@@ -35,11 +35,11 @@ public class MainTest {
 		try {
 //			getUserList();
 			
-//			getUser();
+			getUser();
 			
 //			testDelete();
 			
-			testUpdate();
+//			testUpdate();
 			
 		} finally {
 			// TODO: handle finally clause
@@ -95,8 +95,7 @@ public class MainTest {
             System.out.println("After delete");
             printUsers(iUser.getUserList());
             System.out.println("Test delete finished...");
-        }catch (Exception e)
-        {
+        }catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -123,8 +122,7 @@ public class MainTest {
             System.out.println("User Id: " + user.getId());
             System.out.println("User Name: " + user.getName());
             System.out.println("User Dept: " + user.getDept());
-            System.out.println("User Website: " + user.getWebsite());
-			
+            System.out.println("User Website: " + user.getWebsite());			
 		}
 	}
 
