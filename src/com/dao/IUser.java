@@ -3,8 +3,6 @@ package com.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Select;
-
 import com.models.User;
 
 public interface IUser {
@@ -12,8 +10,7 @@ public interface IUser {
 	public User	getUserByID(int id);
 	//pulic User getUserList
 	
-	public List<User> getUserList();
-	
+	public List<User> getUserList();	
 	
 	public void insertUser(User user);
 	
